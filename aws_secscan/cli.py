@@ -4,8 +4,9 @@ import logging
 from collections import Counter
 from dataclasses import asdict
 from datetime import datetime, timezone
-from cloudguard.remediation import remediate_sg_001
-from cloudguard.scanner import run_scan
+from aws_secscan.remediation import remediate_sg_001
+from aws_secscan.scanner import run_scan
+
 
 def print_results(findings):
     print("AWS SecScan")
@@ -45,8 +46,8 @@ def write_json_report(findings, output_path):
 
 def main():
     logging.basicConfig(
-    level=logging.WARNING,
-    format="%(levelname)s: %(message)s",
+        level=logging.WARNING,
+        format="%(levelname)s: %(message)s",
     )
     
     parser = argparse.ArgumentParser(

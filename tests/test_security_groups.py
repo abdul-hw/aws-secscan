@@ -1,9 +1,9 @@
 from unittest.mock import patch
 
-from cloudguard.checks.security_groups import check_security_groups
+from aws_secscan.checks.security_groups import check_security_groups
 
 
-@patch("cloudguard.checks.security_groups.boto3.client")
+@patch("aws_secscan.checks.security_groups.boto3.client")
 def test_detects_public_ssh(mock_boto_client):
     mock_ec2 = mock_boto_client.return_value
 
@@ -33,7 +33,7 @@ def test_detects_public_ssh(mock_boto_client):
     assert findings[0].resource == "sg-test123"
 
 
-@patch("cloudguard.checks.security_groups.boto3.client")
+@patch("aws_secscan.checks.security_groups.boto3.client")
 def test_ignores_restricted_ssh(mock_boto_client):
     mock_ec2 = mock_boto_client.return_value
 

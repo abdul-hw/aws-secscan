@@ -1,6 +1,6 @@
 import boto3
 from botocore.exceptions import ClientError
-from cloudguard.findings import Finding
+from aws_secscan.findings import Finding
 
 def check_s3_buckets():
     s3 = boto3.client("s3")

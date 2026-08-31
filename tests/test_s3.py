@@ -2,10 +2,10 @@ from unittest.mock import patch
 
 from botocore.exceptions import ClientError
 
-from cloudguard.checks.s3 import check_s3_buckets
+from aws_secscan.checks.s3 import check_s3_buckets
 
 
-@patch("cloudguard.checks.s3.boto3.client")
+@patch("aws_secscan.checks.s3.boto3.client")
 def test_detects_missing_public_access_block(mock_boto_client):
     mock_s3 = mock_boto_client.return_value
 
@@ -35,7 +35,7 @@ def test_detects_missing_public_access_block(mock_boto_client):
     assert findings[0].resource == "test-bucket"
 
 
-@patch("cloudguard.checks.s3.boto3.client")
+@patch("aws_secscan.checks.s3.boto3.client")
 def test_ignores_fully_protected_bucket(mock_boto_client):
     mock_s3 = mock_boto_client.return_value
 

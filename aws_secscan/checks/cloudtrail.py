@@ -1,5 +1,5 @@
 import boto3
-from cloudguard.findings import Finding
+from aws_secscan.findings import Finding
 
 
 def check_cloudtrail():

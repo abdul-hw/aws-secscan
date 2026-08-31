@@ -7,10 +7,10 @@ from botocore.exceptions import (
     ProfileNotFound,
 )
 
-from cloudguard.checks.cloudtrail import check_cloudtrail
-from cloudguard.checks.iam import check_iam_roles
-from cloudguard.checks.s3 import check_s3_buckets
-from cloudguard.checks.security_groups import check_security_groups
+from aws_secscan.checks.cloudtrail import check_cloudtrail
+from aws_secscan.checks.iam import check_iam_roles
+from aws_secscan.checks.s3 import check_s3_buckets
+from aws_secscan.checks.security_groups import check_security_groups
 
 
 logger = logging.getLogger(__name__)

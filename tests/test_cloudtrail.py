@@ -1,9 +1,9 @@
 from unittest.mock import patch
 
-from cloudguard.checks.cloudtrail import check_cloudtrail
+from aws_secscan.checks.cloudtrail import check_cloudtrail
 
 
-@patch("cloudguard.checks.cloudtrail.boto3.client")
+@patch("aws_secscan.checks.cloudtrail.boto3.client")
 def test_detects_missing_trail(mock_boto_client):
     mock_cloudtrail = mock_boto_client.return_value
 
@@ -18,7 +18,7 @@ def test_detects_missing_trail(mock_boto_client):
     assert findings[0].severity == "MEDIUM"
 
 
-@patch("cloudguard.checks.cloudtrail.boto3.client")
+@patch("aws_secscan.checks.cloudtrail.boto3.client")
 def test_detects_disabled_logging(mock_boto_client):
     mock_cloudtrail = mock_boto_client.return_value
 

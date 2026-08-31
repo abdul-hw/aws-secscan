@@ -1,9 +1,9 @@
 from unittest.mock import patch
 
-from cloudguard.checks.iam import check_iam_roles
+from aws_secscan.checks.iam import check_iam_roles
 
 
-@patch("cloudguard.checks.iam.boto3.client")
+@patch("aws_secscan.checks.iam.boto3.client")
 def test_detects_wildcard_s3_permissions(mock_boto_client):
     mock_iam = mock_boto_client.return_value
 
@@ -39,7 +39,7 @@ def test_detects_wildcard_s3_permissions(mock_boto_client):
     assert findings[0].resource == "test-role"
 
 
-@patch("cloudguard.checks.iam.boto3.client")
+@patch("aws_secscan.checks.iam.boto3.client")
 def test_ignores_deny_wildcard_policy(mock_boto_client):
     mock_iam = mock_boto_client.return_value
 
