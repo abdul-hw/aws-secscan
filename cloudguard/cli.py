@@ -8,7 +8,7 @@ from cloudguard.remediation import remediate_sg_001
 from cloudguard.scanner import run_scan
 
 def print_results(findings):
-    print("CloudGuard AWS Security Scan")
+    print("AWS SecScan")
     print()
 
     if not findings:
@@ -50,7 +50,7 @@ def main():
     )
     
     parser = argparse.ArgumentParser(
-        description="CloudGuard AWS security scanner"
+        description="Scan AWS for common security misconfigurations"
     )
 
     subparsers = parser.add_subparsers(
