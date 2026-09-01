@@ -16,7 +16,7 @@ AWS SecScan currently checks for:
 
 ## Example Scan
 
-To run a full scan perform the following steps in order:
+Run a full scan:
 
 ```bash
 python -m aws_secscan scan
