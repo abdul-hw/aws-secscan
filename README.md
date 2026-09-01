@@ -91,7 +91,6 @@ python -m pytest
 GitHub Actions automatically runs the test suite on every push and pull request.
 
 <img width="2048" height="480" alt="image" src="https://github.com/user-attachments/assets/5394d335-8452-49bf-a673-7b1e8a500a98" />
-
 ## Usage
 
 Install dependencies:
