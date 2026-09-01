@@ -9,6 +9,7 @@ It uses boto3 to scan AWS configurations, report risky settings, export findings
 ## Security Checks
 
 AWS SecScan currently checks for:
+
 <img width="1272" height="608" alt="image" src="https://github.com/user-attachments/assets/f1145577-6105-403f-bf7e-e2854ffd8243" />
 
 0.0.0.0/0 means any IPv4 address on the internet can reach the rule.
@@ -33,6 +34,7 @@ python -m aws_secscan scan --service ec2
 
 Every finding contains: ID, Severity, Service, Resource, Title, Description, Remediation
 By using one structure findings remain consistent across AWS services and are easier to display, export, and process.
+
 <img width="1398" height="259" alt="image" src="https://github.com/user-attachments/assets/8324acda-6740-4227-98a5-76584ece3f9b" />
 
 ## JSON Report
@@ -86,6 +88,7 @@ python -m pytest
 <img width="2048" height="332" alt="image" src="https://github.com/user-attachments/assets/a34a03b7-b2f8-4eef-a3b5-800192f3df4a" />
 
 GitHub Actions automatically runs the test suite on every push and pull request.
+
 <img width="2048" height="480" alt="image" src="https://github.com/user-attachments/assets/5394d335-8452-49bf-a673-7b1e8a500a98" />
 
 ## Usage
