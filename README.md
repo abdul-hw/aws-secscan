@@ -32,7 +32,7 @@ python -m aws_secscan scan --service ec2
 
 ## Finding Format
 
-Every finding contains: ID, Severity, Service, Resource, Title, Description, Remediation
+Every finding contains: ID, Severity, Service, Resource, Title, Description, and Remediation
 
 By using one structure findings remain consistent across AWS services and are easier to display, export, and process.
 
