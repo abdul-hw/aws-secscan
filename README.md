@@ -79,7 +79,7 @@ IAM and S3 findings provide remediation guidance instead of automatically making
 
 ## Testing
 
-AWS SecScan uses `pytest` and mocked AWS responses to test security logic without creating real AWS resources.
+AWS SecScan uses pytest and mocked AWS responses to test security logic without creating real AWS resources.
 
 Run the tests:
 
