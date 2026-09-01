@@ -12,6 +12,7 @@ AWS SecScan currently checks for:
 
 <img width="1272" height="608" alt="image" src="https://github.com/user-attachments/assets/f1145577-6105-403f-bf7e-e2854ffd8243" />
 
+
 0.0.0.0/0 means any IPv4 address on the internet can reach the rule.
 
 ## Example Scan
