@@ -119,4 +119,5 @@ python -m aws_secscan scan --output findings.json
 ```
 
 Only use AWS SecScan on AWS accounts and resources you are authorized to access.
+AWS credentials must be configured before running scans.
 
