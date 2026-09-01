@@ -86,7 +86,7 @@ Run the tests:
 ```bash
 python -m pytest
 ```
-<img width="2048" height="332" alt="image" src="https://github.com/user-attachments/assets/a34a03b7-b2f8-4eef-a3b5-800192f3df4a" />
+<img width="2048" height="371" alt="image" src="https://github.com/user-attachments/assets/78b51615-fc7e-4f5a-92cc-14caa257d48d" />
 
 GitHub Actions automatically runs the test suite on every push and pull request.
 
