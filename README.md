@@ -1,7 +1,6 @@
 # AWS SecScan
 
 AWS SecScan is a Python based AWS security scanner that checks for common cloud misconfigurations in EC2, S3, IAM, and CloudTrail.
-
 It uses boto3 to scan AWS configurations, report risky settings, export findings to JSON, and safely remediate supported issues.
 
 ## Architecture
@@ -33,6 +32,5 @@ python -m aws_secscan scan --service ec2
 ## Finding Format
 
 Every finding contains: ID, Severity, Service, Resource, Title, Description, Remediation
-
 By using one structure findings remain consistent across AWS services and are easier to display, export, and process.
 <img width="1398" height="259" alt="image" src="https://github.com/user-attachments/assets/8324acda-6740-4227-98a5-76584ece3f9b" />
